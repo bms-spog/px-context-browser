@@ -516,7 +516,6 @@ This method expects 2 things to be true:
       _hasChildren: function(item) {
         var sessionState =  JSON.parse(window.sessionStorage.getItem('_apphub:state'));
           var uri = item.uri;
-          console.log(item);
           if(uri){
             if(uri.includes(sessionState.type)){
               this.showChevron = false;
